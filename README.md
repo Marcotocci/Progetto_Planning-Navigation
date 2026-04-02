@@ -29,7 +29,7 @@ To ensure all dependencies (ROS 2 Humble, Nav2, BehaviorTree.CPP) are correctly 
 2. **Clone this repository** inside your Docker workspace:
    ```bash
    cd ~/ros2_ws/src
-   git clone [https://github.com/YOUR_USERNAME/Progetto_Planning-Navigation.git](https://github.com/YOUR_USERNAME/Progetto_Planning-Navigation.git)
+   git clone [https://github.com/Marcotocci/Progetto_Planning-Navigation.git](https://github.com/Marcotocci/Progetto_Planning-Navigation.git)
    ```
 3. **Build the project**:
    ```bash
