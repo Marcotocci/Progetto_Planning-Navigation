@@ -53,7 +53,7 @@ ros2 launch progetto_planning lunar_mission.launch.py
 ```
 
 ### 3. Visualize with RViz
-A pre-configured RViz setup is provided to visualize the mission data. A text file containing the exact launch command is located at `ros2_ws/src/pkg/progetto_planning/rviz`. Alternatively, you can open a new terminal and run the following command directly:
+A pre-configured RViz setup is provided to visualize the mission data. A text file containing the exact launch command is located at `ros2_ws/src/pkg/progetto_planning/rviz`. You can open a new terminal and run the following command directly:
 ```bash
 rviz2 -d src/pkg/progetto_planning/rviz/lunar_mission.rviz --ros-args -p use_sim_time:=true
 ```
