@@ -25,11 +25,12 @@ This project is built upon the Sim_Rover framework by PRISMA Lab. It extends the
 
 To ensure all dependencies (ROS 2 Humble, Nav2, BehaviorTree.CPP) are correctly configured, this project is designed to run within the Sim_Rover Docker environment.
 
-1. **Install Docker & NVIDIA Toolkit**: Follow the official guide provided in the base repository.
+1. **Install Docker**: Follow the official guide provided in the base repository (you can find the link in the **Acknowledgments** section at the bottom of this README). 
+   *Note: The NVIDIA Container Toolkit is highly recommended if you are using an NVIDIA GPU, as Gazebo requires hardware acceleration for smooth performance.*
 2. **Clone this repository** inside your Docker workspace:
    ```bash
    cd ~/ros2_ws/src
-   git clone [https://github.com/Marcotocci/Progetto_Planning-Navigation.git](https://github.com/Marcotocci/Progetto_Planning-Navigation.git)
+   git clone [https://github.com/YOUR_USERNAME/Progetto_Planning-Navigation.git](https://github.com/YOUR_USERNAME/Progetto_Planning-Navigation.git)
    ```
 3. **Build the project**:
    ```bash
@@ -57,7 +58,7 @@ ros2 launch progetto_planning lunar_mission.launch.py
 ```
 
 ### 3. Visualize with RViz
-A pre-configured RViz setup is provided to visualize the mission data. A text file containing the exact launch command is located at `ros2_ws/src/pkg/progetto_planning/rviz`. Alternatively, you can open a new terminal and run the following command directly[cite: 3]:
+A pre-configured RViz setup is provided to visualize the mission data. A text file containing the exact launch command is located at `ros2_ws/src/pkg/progetto_planning/rviz`. Alternatively, you can open a new terminal and run the following command directly:
 ```bash
 rviz2 -d src/pkg/progetto_planning/rviz/lunar_mission.rviz --ros-args -p use_sim_time:=true
 ```
