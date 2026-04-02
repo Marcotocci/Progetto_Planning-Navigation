@@ -1,0 +1,5 @@
+<library path="illumination_layer">
+  <class type="illumination_layer_namespace::IlluminationLayer" base_class_type="nav2_costmap_2d::Layer">
+    <description>Layer custom per applicare costi aggiuntivi nelle zone d'ombra del rover lunare</description>
+  </class>
+</library>

@@ -1,0 +1,9 @@
+cat <<EOT >> .gitignore
+build/
+install/
+log/
+.DS_Store
+__pycache__/
+*.pyc
+.vscode/
+EOT

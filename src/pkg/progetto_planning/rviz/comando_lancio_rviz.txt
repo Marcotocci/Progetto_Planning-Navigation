@@ -1,0 +1,1 @@
+rviz2 -d src/pkg/progetto_planning/rviz/lunar_mission.rviz --ros-args -p use_sim_time:=true

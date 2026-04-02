@@ -1,0 +1,49 @@
+<root main_tree_to_execute="MainTree">
+  <BehaviorTree ID="MainTree">
+    
+    <ReactiveFallback name="GestioneEmergenze">
+      
+      <ReactiveSequence name="Missione">
+        <BatteryLevelCheck name="CheckBattery"/>
+        
+        <ReactiveFallback name="FlussoMissione">
+          <Sequence name="RitornoACasa">
+            <IsTargetFound name="CheckTarget"/>
+            <TakeScreenshot name="SnapPhoto"/>
+            <NavigateToGoal name="ReturnToBase" goal_x="0.0" goal_y="0.0" goal_yaw="0.0" frame_id="rover/map"/>
+          </Sequence>
+          <ExploreUntilTargetFound name="EsploraMappa" frame_id="rover/map" robot_base_frame="rover/base_footprint" max_scan_range_m="30.0" n_rays="72" clearance_cells_min="1"/>
+        </ReactiveFallback>
+      </ReactiveSequence>
+
+      <GoToLightZone name="ExecuteRescue"/>
+
+    </ReactiveFallback>
+    
+  </BehaviorTree>
+
+  <TreeNodesModel>
+    <Condition ID="BatteryLevelCheck"/>
+    
+    <Condition ID="IsTargetFound"/>
+    
+    <Action ID="TakeScreenshot"/>
+    
+    <Action ID="GoToLightZone"/>
+    
+    <Action ID="NavigateToGoal">
+      <input_port name="goal_x" type="double">Coordinata X del traguardo</input_port>
+      <input_port name="goal_y" type="double">Coordinata Y del traguardo</input_port>
+      <input_port name="goal_yaw" type="double">Orientamento (radianti)</input_port>
+      <input_port name="frame_id" type="std::string">Frame di riferimento</input_port>
+    </Action>
+    
+    <Action ID="ExploreUntilTargetFound">
+      <input_port name="frame_id" type="std::string">Frame della mappa</input_port>
+      <input_port name="robot_base_frame" type="std::string">Frame del rover</input_port>
+      <input_port name="max_scan_range_m" type="double">Raggio massimo scansione</input_port>
+      <input_port name="n_rays" type="int">Numero di raggi radar</input_port>
+      <input_port name="clearance_cells_min" type="int">Celle di sicurezza dai muri</input_port>
+    </Action>
+  </TreeNodesModel>
+</root>
