@@ -26,9 +26,8 @@ This project is built upon the Sim_Rover framework by PRISMA Lab. It extends the
 To ensure all dependencies (ROS 2 Humble, Nav2, BehaviorTree.CPP) are correctly configured, this project is designed to run within the Sim_Rover Docker environment.
 
 1. **Install Docker**: Follow the official guide provided in the base repository (you can find the link in the **Acknowledgments** section at the bottom of this README). 
-2. **Clone this repository** inside your Docker workspace:
+2. **Clone this repository**
    ```bash
-   cd ~/ros2_ws/src
    git clone https://github.com/Marcotocci/Progetto_Planning-Navigation.git
    ```
 3. **Build the project**:
