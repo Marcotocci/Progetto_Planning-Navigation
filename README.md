@@ -6,7 +6,7 @@
 ![C++](https://img.shields.io/badge/C++-17-00599C?style=flat&logo=c%2B%2B)
 
 This repository contains the final project for the Planning and Navigation course (Prof. Riccardo Caccavale).  
-The project implements a complete autonomous exploration and navigation stack for a lunar rover, featuring custom costmap layers, reactive decision-making, and visual servoing.
+The project implements a complete autonomous exploration and navigation stack for a lunar rover, featuring custom costmap layer, reactive decision-making, and visual servoing.
 
 ---
 
