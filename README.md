@@ -60,13 +60,6 @@ rviz2 -d src/pkg/progetto_planning/rviz/lunar_mission.rviz --ros-args -p use_sim
 
 ---
 
-## System Requirements
-* **OS:** Ubuntu 22.04 LTS (via Docker)
-* **ROS 2:** Humble Hawksbill
-* **Simulator:** Gazebo Ignition / Harmonic
-
----
-
 ## Acknowledgments
 This project is a derivative work based on the simulation environment provided by **PRISMA Lab (University of Naples Federico II)**.
 * Base Repository: [PRISMA Lab - Sim_Rover](https://github.com/prisma-lab/Sim_Rover)
