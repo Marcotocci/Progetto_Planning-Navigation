@@ -26,11 +26,8 @@ This project is built upon the Sim_Rover framework by PRISMA Lab. It extends the
 To ensure all dependencies are correctly configured, this project requires a Docker-based setup. Please follow the procedure explained in the original repository to prepare your environment.
 
 1. **Docker Setup (Image & Container)**: Go to the Prerequisites section of the [Sim_Rover repository](https://github.com/prisma-lab/Sim_Rover) and follow the instructions to download Docker, build the Docker image, and create the container.
-2. **Clone this repository**
-   ```bash
-   git clone https://github.com/Marcotocci/Progetto_Planning-Navigation.git
-   ```
-3. **Build the project**:
+
+2. **Build the project**:
    ```bash
    cd ~/ros2_ws
    colcon build --symlink-install
