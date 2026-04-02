@@ -68,12 +68,6 @@ rviz2 -d src/pkg/progetto_planning/rviz/lunar_mission.rviz --ros-args -p use_sim
 * **OS:** Ubuntu 22.04 LTS (via Docker)
 * **ROS 2:** Humble Hawksbill
 * **Simulator:** Gazebo Ignition / Harmonic
-* **Key Nodes & Packages:**
-    * battery_simulator
-    * light_zone_manager
-    * target_detector
-    * bt_executor (BehaviorTree.CPP v3)
-    * exploration_mapper
 
 ---
 
